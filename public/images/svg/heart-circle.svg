@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+  <g id="Component_3_2" data-name="Component 3 – 2" opacity="0.853">
+    <g id="Ellipse_64" data-name="Ellipse 64" fill="none" stroke="#1d3e7c" stroke-width="1.5">
+      <circle cx="20.5" cy="20.5" r="20.5" stroke="none"/>
+      <circle cx="20.5" cy="20.5" r="19.75" fill="none"/>
+    </g>
+    <path id="heart" d="M18.663,4.428a4.879,4.879,0,0,0-6.9,0l-.94.94-.94-.94a4.881,4.881,0,0,0-6.9,6.9l.94.94,6.9,6.9,6.9-6.9.94-.94a4.879,4.879,0,0,0,0-6.9Z" transform="translate(9.679 9.415)" fill="none" stroke="#1d3e7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

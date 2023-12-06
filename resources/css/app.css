@@ -1,0 +1,264 @@
+body {
+    font-family: 'Heebo', sans-serif !important;
+}
+.bg-default {
+    background-color: #1d3e7c;
+}
+.text-default {
+    color: #1d3e7c;
+}
+.border-transparent {
+    border-color: transparent !important;
+}
+.text-size-default {
+    font-size: 40px;
+}
+.text-large {
+    font-size: 70px;
+}
+.text-small {
+    font-size: 30px;
+}
+.btn-default {
+    padding: 18px 67px;
+    background-color: transparent;
+    border-radius: 53px;
+    outline: none;
+    border: transparent;
+    font-size: 32px;
+    font-weight: bold;
+}
+.btn-default-blue {
+    background-color: #1d3e7c;
+    border: 3px solid #1d3e7c;
+}
+.btn-outlined {
+    border: 3px solid;
+}
+.btn-bg-white {
+    border: 3px solid transparent;
+    background-color: rgba(255, 255, 255, 0.572);
+}
+.btn-default-blue:hover {
+    background-color: white;
+    color: #1d3e7c !important;
+    border: 3px solid white !important;
+}
+.btn-outlined:hover{
+    border: 3px solid #1d3e7c !important;
+    color: white;
+    background-color: #1d3e7c;
+}
+.btn-bg-white:hover {
+    border: 3px solid #1d3e7c;
+    color: white;
+    background-color: #1d3e7c;
+}
+.capsual-button {
+    border: 2px solid;
+    padding: 6px 20px;
+    background-color: transparent;
+    border-radius: 53px;
+}
+.capsual-button:hover {
+    border: 2px solid #1d3e7c;
+    background-color: #1d3e7c;
+    color: white;
+}
+.form-input {
+    padding: 20px 30px;
+    border-radius: 53px;
+    border: 2px solid;
+    background-color: transparent;
+}
+.form-input:focus {
+    outline: none;
+}
+.bg-image-container {
+    position: relative;
+    background: transparent url('../../public/images/image-2.png') 0% 0% no-repeat;
+    mix-blend-mode: multiply;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+}
+.signin-form {
+    background: transparent linear-gradient(186deg, #1d3e7ca9 0%, #1d3e7c9a 20%, #0f1f3e75 100%) 0% 0% no-repeat padding-box;
+    border-radius: 49px 0px 0px 49px;
+    padding: 69px 119px 68px 47px;
+}
+.signin-form .bg-default {
+    border-radius: 49px;
+    padding: 40px 60px !important;
+}
+.signin-form h2 {
+    font: normal normal medium 68px/69px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.footer-content {
+    width: 87%;
+    position: absolute;
+    bottom: 70px;
+    left: 119px;
+}
+.footer-content img {
+    width: 285px;
+}
+.side-spacing {
+    padding: 80px 119px 0 !important;
+}
+.bg-image-container.two {
+    background: transparent url('../../public/images/baby-2.png') 400% 60% no-repeat padding-box;
+    background-size: cover;
+}
+.bg-image-container.three {
+    background: transparent url('../../public/images/baby-3.png') 0% 0% no-repeat padding-box;
+    background-size: contain;
+}
+.bg-image-container.four {
+    background: transparent url('../../public/images/bg-orange.png') 10% 100% no-repeat padding-box;
+    background-size: cover;
+}
+.bg-image-container.five {
+    background: transparent linear-gradient(180deg, #F6F6F5 0%, #F3F5F5 40%, #C9D9D5 100%) 0% 0% no-repeat padding-box;
+    background-size: auto;
+}
+.bg-image-container.six {
+    height: auto;
+    background: transparent url('../../public/images/bg-cyan.png') 10% 100% no-repeat padding-box;
+    background-size: cover;
+}
+.bg-image-container.eight {
+    background: transparent url('../../public/images/bg-cyan.png') 10% 100% no-repeat padding-box;
+    background-size: cover;
+}
+.bg-image-container.nine {
+    background: transparent url('../../public/images/bg-cyan.png') 10% 100% no-repeat padding-box;
+    background-size: cover;
+}
+.search-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+}
+.half-border-icon {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.babies-background {
+    width: auto !important;
+    height: 550px;
+    margin: -120px 0 0 -40px;
+}
+::placeholder {
+    color: #1d3e7c;
+    font-size: 30px;
+}
+.signin-form ::placeholder {
+    color: white;
+    font-size: 30px;
+}
+
+.donor-list {
+    position: relative;
+    margin: 0px 15px 20px;
+    overflow: hidden;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 11px #0000003E;
+    border-radius: 53px;
+    opacity: 1;
+}
+.donor-list .tag, .donor-information .tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1d3e7cb4;
+    border-radius: 0 0 0 37px;
+    padding: 12px 50px;
+    color: white;
+    font-size: 20px;
+}
+.donor-list .heart-icon, .donor-information .heart-icon {
+    position: absolute;
+    bottom: 95px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.donor-list .heart-icon:hover, .donor-information .heart-icon:hover, .footer-content .position-absolute:hover img {
+    background-color: #DD1959;
+    cursor: pointer;
+}
+.donor-list .donor-details {
+    width: 100%;
+    height: 80px;
+}
+.donor-list .donor-details div {
+    padding: 30px 25px 10px;
+    color: #1d3e7c;
+    font-weight: 700;
+}
+.donor-list .donor-details div:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.add-border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer-content .position-absolute {
+    border-radius: 0 50px 50px 0;
+    padding: 20px 30px 20px 80px;
+    background-color: white;
+    left: -106px;
+}
+.footer-content .position-absolute img {
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    border-radius: 50%;
+}
+.footer-content .position-absolute span {
+    color: #1d3e7c;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.donor-information {
+    width: 300px;
+    position: relative;
+    background: #d2d2d2 0% 0% no-repeat padding-box;
+    border-radius: 53px;
+}
+.donor-information .tag {
+    border-radius: 0 37px 0;
+}
+.donor-information img {
+    border-radius: 37px;
+}
+.donor-information .heart-icon{
+    right: 110%;
+    top: 48%;
+}
+.bg-image-footer {
+    height: 600px;
+    background: transparent url('../../public/images/image-1.png') 40% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    background-size: contain;
+}
+.donor-list .heart-icon.fill {
+    background-color: #DD1959;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.choosen-doner {
+    border-radius: 53px;
+    border: 2px solid #1d3e7c;
+}
