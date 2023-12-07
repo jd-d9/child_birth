@@ -136,7 +136,11 @@ body {
     background-size: cover;
 }
 .bg-image-container.nine {
-    background: transparent url('../../public/images/bg-cyan.png') 10% 100% no-repeat padding-box;
+    background: transparent url('../../public/images/bg-blur.png') 10% 100% no-repeat padding-box;
+    background-size: cover;
+}
+.bg-image-container.ten {
+    background: transparent url('../../public/images/bg-orange.png') 10% 100% no-repeat padding-box;
     background-size: cover;
 }
 .search-icon {
@@ -184,7 +188,7 @@ body {
     color: white;
     font-size: 20px;
 }
-.donor-list .heart-icon, .donor-information .heart-icon {
+.donor-list .heart-icon, .donor-list .heart-icon-checkbox, .donor-information .heart-icon {
     position: absolute;
     bottom: 95px;
     right: 20px;
@@ -261,4 +265,104 @@ body {
 .choosen-doner {
     border-radius: 53px;
     border: 2px solid #1d3e7c;
+}
+.bg-image-blur {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(30px);
+    z-index: -1;
+}
+.bg-image-container.nine .signin-form {
+    border-radius: 53px;
+    padding: 40px 50px;
+}
+.bg-image-container.nine .signin-form .bg-default {
+    border-radius: 50px;
+    padding: 40px 60px 70px !important;
+}
+
+.bg-image-container.ten .half-border-icon {
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+select.form-input {
+    padding: 12px 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select:required:invalid {
+    color: #1d3e7c;
+    font-size: 30px;
+    line-height: 1.5;
+}
+select option[value=""][disabled] {
+    display: none;
+}
+
+.bg-image-container.ten .bg-image-blur {
+    height: 500px;
+    opacity: 0.1;
+    top: unset;
+    bottom: 15%;
+    left: 10%;
+    width: 80%;
+    background: url('../../public/images/babies.png') 40% 0% no-repeat padding-box;
+    background-size: contain;
+}
+
+.multiple-options {
+    border-radius: 53px;
+    opacity: 1 !important;
+    height: 350px;
+    overflow-y: auto;
+}
+.multiple-options::-webkit-scrollbar {
+    width: 25px;
+    background: #ebeaea;
+    padding: 15px;
+    border-radius: 50px;
+}
+.multiple-options::-webkit-scrollbar-thumb {
+    border: 5px solid #ebeaea;
+    border-radius: 50px;
+    background: #fff;
+}
+
+.multiple-options .capsual-button {
+    width: 120px;
+    height: 40px;
+}
+.multiple-options .d-flex {
+    gap: 15px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.bordered-div {
+    padding: 10px 10px 10px 30px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+}
+.bordered-div button {
+    font-size: 25px;
+    border: 2px solid #1d3e7c;
+    color: #fff;
+    background-color: #1d3e7c !important;
+    border-radius: 28px;
+    padding: 15px 35px;
+}
+.bordered-div button:hover {
+    color: #1d3e7c;
+    background-color: transparent !important;
+}
+
+.vertical-scroller {
+    height: 500px;
+    overflow-y: auto;
+}
+.vertical-scroller::-webkit-scrollbar {
+    width: 0;
 }

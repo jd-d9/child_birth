@@ -12,7 +12,7 @@
                     <div class="w-75 mx-auto position-relative mt-4">
                         <input type="text" class="form-input text-default border-transparent w-100" placeholder="חיפוש לפי שם הנשאות">
                         <img src="../../../public/images/svg/half-border.svg" class="half-border-icon" alt="img" width="100%" height="auto">
-                        <img src="../../../public/images/svg/left.svg" class="search-icon" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/left.svg" class="search-icon" alt="img" width="100%" height="auto" style="cursor: pointer" @click.prevent="redirectToPage('/ten')">
                     </div>
                     <h5 class="text-center text-default mt-4 mb-2"></h5>
                 </div>
@@ -28,7 +28,7 @@
                     <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
                 </div>
                 <div class="col-6">
-                    <button class="btn-default btn-outlined text-default border-white" style="float: left">המשך ></button>
+                    <button class="btn-default btn-outlined text-default border-white" style="float: left" @click.prevent="redirectToPage('/five')">המשך ></button>
                 </div>
             </div>
         </div>
@@ -39,9 +39,12 @@
 export default {
     data() {
         return {
-            fieldOne: 'שם פרטי ושם משפחה',
-            fieldTwo: 'ת.ז',
         }
-    }
+    },
+    methods: {
+        redirectToPage(route) {
+            this.$router.push(route);
+        }
+    },
 }
 </script>

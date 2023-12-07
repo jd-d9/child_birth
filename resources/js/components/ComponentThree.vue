@@ -18,7 +18,7 @@
                     <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
                 </div>
                 <div class="col-6">
-                    <button class="btn-default btn-bg-white text-default">המשך ></button>
+                    <button class="btn-default btn-bg-white text-default" @click.prevent="redirectToPage">המשך ></button>
                 </div>
             </div>
         </div>
@@ -29,9 +29,12 @@
 export default {
     data() {
         return {
-            fieldOne: 'שם פרטי ושם משפחה',
-            fieldTwo: 'ת.ז',
         }
-    }
+    },
+    methods: {
+        redirectToPage() {
+            this.$router.push('/four');
+        }
+    },
 }
 </script>

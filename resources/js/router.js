@@ -9,6 +9,8 @@ import ComponentSix from './components/ComponentSix.vue';
 import ComponentSeven from './components/ComponentSeven.vue';
 import ComponentEight from './components/ComponentEight.vue';
 import ComponentNine from './components/ComponentNine.vue';
+import ComponentTen from './components/ComponentTen.vue';
+import ComponentEleven from './components/ComponentEleven.vue';
 
 const routes = [
     {
@@ -46,6 +48,14 @@ const routes = [
     {
         path: '/nine',
         component: ComponentNine,
+    },
+    {
+        path: '/ten',
+        component: ComponentTen,
+    },
+    {
+        path: '/eleven',
+        component: ComponentEleven,
     },
 ];
 

@@ -14,7 +14,7 @@
             </div>
             <div class="row side-spacing pb-5">
                 <div class="col-3 me-auto">
-                    <div class="donor-list">
+                    <div class="donor-list" @click.prevent="redirectToPage('/six')">
                         <span class="tag">ספורטאי</span>
                         <img src="../../../public/images/avatar-3.png" alt="img" width="100%" height="auto">
                         <img src="../../../public/images/svg/heart-fill.svg" class="heart-icon fill" alt="img" width="25" height="auto">
@@ -82,7 +82,7 @@
                     <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
                 </div>
                 <div class="col-6">
-                    <button class="btn-default btn-outlined text-default" style="float: left"> חזרה ></button>
+                    <button class="btn-default btn-outlined text-default" style="float: left" @click.prevent="redirectToPage('/five')"> חזרה ></button>
                 </div>
             </div>
         </div>
@@ -93,9 +93,12 @@
 export default {
     data() {
         return {
-            fieldOne: 'שם פרטי ושם משפחה',
-            fieldTwo: 'ת.ז',
         }
-    }
+    },
+    methods: {
+        redirectToPage(route) {
+            this.$router.push(route);
+        }
+    },
 }
 </script>
