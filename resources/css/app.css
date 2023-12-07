@@ -1,6 +1,8 @@
 body {
     font-family: 'Heebo', sans-serif !important;
 }
+
+/* comon css */
 .bg-default {
     background-color: #1d3e7c;
 }
@@ -19,6 +21,7 @@ body {
 .text-small {
     font-size: 30px;
 }
+
 .btn-default {
     padding: 18px 67px;
     background-color: transparent;
@@ -54,17 +57,7 @@ body {
     color: white;
     background-color: #1d3e7c;
 }
-.capsual-button {
-    border: 2px solid;
-    padding: 6px 20px;
-    background-color: transparent;
-    border-radius: 53px;
-}
-.capsual-button:hover {
-    border: 2px solid #1d3e7c;
-    background-color: #1d3e7c;
-    color: white;
-}
+
 .form-input {
     padding: 20px 30px;
     border-radius: 53px;
@@ -74,14 +67,128 @@ body {
 .form-input:focus {
     outline: none;
 }
+::placeholder {
+    color: #1d3e7c;
+    font-size: 30px;
+}
+select.form-input {
+    padding: 12px 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select:required:invalid {
+    color: #1d3e7c;
+    font-size: 30px;
+    line-height: 1.5;
+}
+select option[value=""][disabled] {
+    display: none;
+}
+
+/* capsual shape checkbox button */
+.capsual-button {
+    position: relative;
+    border: 2px solid #1d3e7c;
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 53px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.capsual-button .checked-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.capsual-button input {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.capsual-button input:checked + .checked-bg {
+    background-color: #1d3e7c;
+    color: white;
+}
+
+/* heart icon checkbox */
+.heart-icon {
+    bottom: 95px;
+    right: 20px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+}
+.heart-icon img {
+    border-radius: unset !important;
+}
+.heart-icon .hovered, .heart-icon .default {
+    border: 2px solid #1d3e7cc9;
+    width: 35px;
+    height: 35px;
+    padding: 8px 6px 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.heart-icon .hovered {
+    display: none;
+}
+.heart-icon input:checked ~ .hovered {
+    border-color: #DD1959;
+    background-color: #DD1959;
+    display: block !important;
+}
+.heart-icon input:checked ~ .default {
+    display: none !important;
+}
+.heart-icon img.hovered {
+    display: none;
+}
+.heart-icon input {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/* footer section */
+.footer-content {
+    width: 87%;
+    position: absolute;
+    bottom: 60px;
+    left: 119px;
+}
+.footer-content img {
+    width: 285px;
+}
+
+/* container side spacing */
+.side-spacing {
+    padding: 80px 119px 0 !important;
+}
+
+/* sign in page */
 .bg-image-container {
     position: relative;
-    background: transparent url('../../public/images/image-2.png') 0% 0% no-repeat;
     mix-blend-mode: multiply;
     background-size: cover;
     opacity: 1;
     width: 100%;
     height: 100vh;
+}
+.bg-image-container.first {
+    background: transparent url('../../public/images/image-2.png') 0% 0% no-repeat;
+    background-size: cover;
 }
 .signin-form {
     background: transparent linear-gradient(186deg, #1d3e7ca9 0%, #1d3e7c9a 20%, #0f1f3e75 100%) 0% 0% no-repeat padding-box;
@@ -98,18 +205,12 @@ body {
     color: #FFFFFF;
     opacity: 1;
 }
-.footer-content {
-    width: 87%;
-    position: absolute;
-    bottom: 70px;
-    left: 119px;
+.signin-form ::placeholder {
+    color: white;
+    font-size: 30px;
 }
-.footer-content img {
-    width: 285px;
-}
-.side-spacing {
-    padding: 80px 119px 0 !important;
-}
+
+/* page 2 css */
 .bg-image-container.two {
     background: transparent url('../../public/images/baby-2.png') 400% 60% no-repeat padding-box;
     background-size: cover;
@@ -155,20 +256,18 @@ body {
     bottom: 0px;
     left: 0px;
 }
+.half-border-icon.rotate-up {
+    bottom: 49%;
+    transform: rotateX(180deg);
+    transition: all 0.6s ease;
+}
 .babies-background {
     width: auto !important;
     height: 550px;
     margin: -120px 0 0 -40px;
 }
-::placeholder {
-    color: #1d3e7c;
-    font-size: 30px;
-}
-.signin-form ::placeholder {
-    color: white;
-    font-size: 30px;
-}
 
+/* page 5 css */
 .donor-list {
     position: relative;
     margin: 0px 15px 20px;
@@ -187,18 +286,6 @@ body {
     padding: 12px 50px;
     color: white;
     font-size: 20px;
-}
-.donor-list .heart-icon, .donor-list .heart-icon-checkbox, .donor-information .heart-icon {
-    position: absolute;
-    bottom: 95px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-.donor-list .heart-icon:hover, .donor-information .heart-icon:hover, .footer-content .position-absolute:hover img {
-    background-color: #DD1959;
-    cursor: pointer;
 }
 .donor-list .donor-details {
     width: 100%;
@@ -220,6 +307,7 @@ body {
     padding: 20px 30px 20px 80px;
     background-color: white;
     left: -106px;
+    cursor: pointer;
 }
 .footer-content .position-absolute img {
     width: 30px;
@@ -233,6 +321,11 @@ body {
     font-weight: 700;
 }
 
+/* donor information - page 6 */
+.donor-information .heart-icon{
+    right: 320px;
+    top: 135px;
+}
 .donor-information {
     width: 300px;
     position: relative;
@@ -245,21 +338,11 @@ body {
 .donor-information img {
     border-radius: 37px;
 }
-.donor-information .heart-icon{
-    right: 110%;
-    top: 48%;
-}
 .bg-image-footer {
     height: 600px;
     background: transparent url('../../public/images/image-1.png') 40% 0% no-repeat padding-box;
     mix-blend-mode: multiply;
     background-size: contain;
-}
-.donor-list .heart-icon.fill {
-    background-color: #DD1959;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
 }
 
 .choosen-doner {
@@ -275,6 +358,8 @@ body {
     backdrop-filter: blur(30px);
     z-index: -1;
 }
+
+/* page 9 css */
 .bg-image-container.nine .signin-form {
     border-radius: 53px;
     padding: 40px 50px;
@@ -284,25 +369,12 @@ body {
     padding: 40px 60px 70px !important;
 }
 
+/* page 10 css */
 .bg-image-container.ten .half-border-icon {
     top: 0;
     bottom: 0;
     pointer-events: none;
 }
-select.form-input {
-    padding: 12px 30px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-select:required:invalid {
-    color: #1d3e7c;
-    font-size: 30px;
-    line-height: 1.5;
-}
-select option[value=""][disabled] {
-    display: none;
-}
-
 .bg-image-container.ten .bg-image-blur {
     height: 500px;
     opacity: 0.1;
@@ -313,7 +385,6 @@ select option[value=""][disabled] {
     background: url('../../public/images/babies.png') 40% 0% no-repeat padding-box;
     background-size: contain;
 }
-
 .multiple-options {
     border-radius: 53px;
     opacity: 1 !important;
@@ -323,7 +394,6 @@ select option[value=""][disabled] {
 .multiple-options::-webkit-scrollbar {
     width: 25px;
     background: #ebeaea;
-    padding: 15px;
     border-radius: 50px;
 }
 .multiple-options::-webkit-scrollbar-thumb {
@@ -331,7 +401,6 @@ select option[value=""][disabled] {
     border-radius: 50px;
     background: #fff;
 }
-
 .multiple-options .capsual-button {
     width: 120px;
     height: 40px;
@@ -341,7 +410,15 @@ select option[value=""][disabled] {
     flex: 1;
     flex-wrap: wrap;
 }
+.vertical-scroller {
+    height: 400px;
+    overflow-y: auto;
+}
+.vertical-scroller::-webkit-scrollbar {
+    width: 0;
+}
 
+/* page 11 css */
 .bordered-div {
     padding: 10px 10px 10px 30px;
     border: 2px solid rgba(0, 0, 0, 0.05);
@@ -359,10 +436,14 @@ select option[value=""][disabled] {
     background-color: transparent !important;
 }
 
-.vertical-scroller {
-    height: 500px;
-    overflow-y: auto;
+.visible-options {
+    height: 200px;
 }
-.vertical-scroller::-webkit-scrollbar {
-    width: 0;
+
+.bg-image-container.five .capsual-button {
+    width: 130px;
+    height: 40px;
+    color: #1d3e7c;
+    background-color: white;
+    border-color: white;
 }
