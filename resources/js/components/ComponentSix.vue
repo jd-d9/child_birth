@@ -41,7 +41,15 @@
                     <div class="donor-information">
                         <span class="tag">מהנדס</span>
                         <img src="../../../public/images/donor-5.png" alt="img" width="100%" height="auto">
-                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <label class="heart-icon">
+                            <input type="checkbox"/>
+                            <div class="default">
+                                <img src="../../../public/images/svg/heart.svg" alt="img" width="100%" height="auto">
+                            </div>
+                            <div class="hovered">
+                                <img src="../../../public/images/svg/heart-white.svg" alt="img" width="100%" height="auto">
+                            </div>
+                        </label>
                     </div>
                     <h5 class="text-end text-small text-default mt-4 mb-2">התורם מספר על עצמו</h5>
                     <h5 class="text-end text-default mb-2" style="line-height: 2">באסתטיקה תכנונה אומנות בתרבות על לקוחות אמנות האמנות מוצרים, אין הפכה בערך צריך אך מוחלטת סביר המשותפים מסרים העיצוב. השוהה אסתטיקה מגבלות בחלל הדורשים יש של אסתטיים פונקציות פי, של עיצוב לראות עיצוב וכו אמנות קוקוס תחושת מוצר יום. השואף תוך לרוב על או כללי רבה בערכים מים הסממנים, מערכת היוצר ביותר השונים בהגייתה ממסד טכני ויראה כבוד לאמנות. בניגוד כולל כך מקיום לשלב ההנדסה עיצוב מהצורך לענות מהותו, העיצוב נוחות וכתוצאה הבנה והאומנות טוענים בדומה עיצוב נדרש או. שיצירת וידע של המעוצב הראשונה עיצוב תחום תחושה כי מכך, תהליך של האמצעים שיענו מסוים לאמנות באופן או הוא רוב. חברתיים לתחומי המעוצבת או תחומי עיצוב בעוד אל מגורים קיימות, האנושית אנו קבוצה הנובע קרבה של את המאדיר ממנו תכנון.</h5>

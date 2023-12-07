@@ -30,71 +30,10 @@
                 <div class="col-10 mx-auto options-bg-babies">
                     <div class="w-50 bg-white multiple-options mx-auto" dir="ltr">
                         <div class="d-flex justify-content-between py-3 px-5">
-                            <button class="capsual-button text-default">ATP6V1B1</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ATP6V1B1</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ARSA</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ARSA</button>
-                            <button class="capsual-button text-default">ACADVL</button>
-                            <button class="capsual-button text-default">CCDC151</button>
-                            <button class="capsual-button text-default">SMA</button>
-                            <button class="capsual-button text-default">RRTFD</button>
-                            <button class="capsual-button text-default">EIF2AK3</button>
-                            <button class="capsual-button text-default">COL4A3</button>
-                            <button class="capsual-button text-default">COL4A4</button>
-                            <button class="capsual-button text-default">SLC16A2</button>
-                            <button class="capsual-button text-default">COL4A3</button>
-                            <button class="capsual-button text-default">KKYT</button>
-                            <button class="capsual-button text-default">HMGCL</button>
-                            <button class="capsual-button text-default">KKYT</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">HSD17B4</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ATP6V1B1</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">HSD17B4</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ATP6V1B1</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">ATP6V1B1</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ATP6V1B1</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ARSA</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ARSA</button>
-                            <button class="capsual-button text-default">ACADVL</button>
-                            <button class="capsual-button text-default">CCDC151</button>
-                            <button class="capsual-button text-default">SMA</button>
-                            <button class="capsual-button text-default">RRTFD</button>
-                            <button class="capsual-button text-default">EIF2AK3</button>
-                            <button class="capsual-button text-default">COL4A3</button>
-                            <button class="capsual-button text-default">COL4A4</button>
-                            <button class="capsual-button text-default">SLC16A2</button>
-                            <button class="capsual-button text-default">COL4A3</button>
-                            <button class="capsual-button text-default">KKYT</button>
-                            <button class="capsual-button text-default">HMGCL</button>
-                            <button class="capsual-button text-default">KKYT</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">HSD17B4</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ATP6V1B1</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">MSUD</button>
-                            <button class="capsual-button text-default">HSD17B4</button>
-                            <button class="capsual-button text-default">ACADM</button>
-                            <button class="capsual-button text-default">ATP6V1B1</button>
-                            <button class="capsual-button text-default">ACADM</button>
+                            <label class="capsual-button" v-for="text in filterTexts" :key="text">
+                                <input type="checkbox"/>
+                                <div class="checked-bg">{{ text }}</div>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -115,6 +54,73 @@
 export default {
     data() {
         return {
+            filterTexts: [
+                'ATP6V1B1',
+                'ACADM',
+                'ATP6V1B1',
+                'ACADM',
+                'ARSA',
+                'ACADM',
+                'ARSA',
+                'ACADVL',
+                'CCDC151',
+                'SMA',
+                'RRTFD',
+                'EIF2AK3',
+                'COL4A3',
+                'COL4A4',
+                'SLC16A2',
+                'COL4A3',
+                'KKYT',
+                'HMGCL',
+                'KKYT',
+                'MSUD',
+                'MSUD',
+                'MSUD',
+                'MSUD',
+                'HSD17B4',
+                'ACADM',
+                'ATP6V1B1',
+                'ACADM',
+                'MSUD',
+                'HSD17B4',
+                'ACADM',
+                'ATP6V1B1',
+                'ACADM',
+                'MSUD',
+                'ATP6V1B1',
+                'ACADM',
+                'ATP6V1B1',
+                'ACADM',
+                'ARSA',
+                'ACADM',
+                'ARSA',
+                'ACADVL',
+                'CCDC151',
+                'SMA',
+                'RRTFD',
+                'EIF2AK3',
+                'COL4A3',
+                'COL4A4',
+                'SLC16A2',
+                'COL4A3',
+                'KKYT',
+                'HMGCL',
+                'KKYT',
+                'MSUD',
+                'MSUD',
+                'MSUD',
+                'MSUD',
+                'HSD17B4',
+                'ACADM',
+                'ATP6V1B1',
+                'ACADM',
+                'MSUD',
+                'HSD17B4',
+                'ACADM',
+                'ATP6V1B1',
+                'ACADM',
+            ]
         }
     },
     methods: {

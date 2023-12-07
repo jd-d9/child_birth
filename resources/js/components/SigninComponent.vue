@@ -1,8 +1,8 @@
 <template>
-    <div class="bg-image-container">
+    <div class="bg-image-container first">
         <div class="container-fluid pt-5">
             <div class="row mt-2">
-                <div class="col-5 px-0">
+                <div class="col-xl-5 col-lg-6 col-md-8 mx-auto px-0">
                     <div class="signin-form mt-5">
                         <div class="bg-default">
                             <h2 class="text-center text-size-default">להתחלת התהליך</h2>
@@ -14,14 +14,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7 px-0"></div>
+                <div class="col-xl-7 col-lg-6 px-0 d-none d-lg-block d-xl-block"></div>
             </div>
             <div class="footer-content">
                 <div class="row">
-                    <div class="col-6 text-right">
+                    <div class="col-sm-6 text-right">
                         <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <button class="btn-default btn-outlined text-default" style="float: left" @click.prevent="redirectToPage">המשך ></button>
                     </div>
                 </div>

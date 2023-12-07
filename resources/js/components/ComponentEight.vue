@@ -15,7 +15,15 @@
                         <div class="donor-list w-75 mx-auto">
                             <span class="tag">ספורטאי</span>
                             <img src="../../../public/images/avatar-3.png" alt="img" width="100%" height="auto">
-                            <img src="../../../public/images/svg/heart-fill.svg" class="heart-icon fill" alt="img" width="25" height="auto">
+                            <label class="heart-icon">
+                                <input type="checkbox"/>
+                                <div class="default">
+                                    <img src="../../../public/images/svg/heart.svg" alt="img" width="100%" height="auto">
+                                </div>
+                                <div class="hovered">
+                                    <img src="../../../public/images/svg/heart-white.svg" alt="img" width="100%" height="auto">
+                                </div>
+                            </label>
                             <div class="donor-details d-flex justify-content-center align-items-center bg-white">
                                 <div class="h-100">
                                     <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">

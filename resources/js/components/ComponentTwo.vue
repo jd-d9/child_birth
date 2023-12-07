@@ -7,18 +7,36 @@
                     <h4 class="text-right text-default">שתעני על השאלות הבאות:</h4>
                     <h2 class="text-right text-default text-size-default mt-4 mb-2">CMV</h2>
                     <div class="d-flex align-items-center">
-                        <button class="capsual-button text-default">כן</button>
-                        <button class="capsual-button text-default me-5">לא</button>
+                        <label class="capsual-button">
+                            <input type="checkbox"/>
+                            <div class="checked-bg">כן</div>
+                        </label>
+                        <label class="capsual-button me-5">
+                            <input type="checkbox"/>
+                            <div class="checked-bg">לא</div>
+                        </label>
                     </div>
                     <h2 class="text-right text-default text-size-default mt-4 mb-2">תרומת ביצית</h2>
                     <div class="d-flex align-items-center">
-                        <button class="capsual-button text-default">כן</button>
-                        <button class="capsual-button text-default me-5">לא</button>
+                        <label class="capsual-button">
+                            <input type="checkbox"/>
+                            <div class="checked-bg">לא</div>
+                        </label>
+                        <label class="capsual-button me-5">
+                            <input type="checkbox"/>
+                            <div class="checked-bg">כן</div>
+                        </label>
                     </div>
                     <h2 class="text-right text-default text-size-default mt-4 mb-2">נשאות גנטית</h2>
                     <div class="d-flex align-items-center">
-                        <button class="capsual-button text-default">כן</button>
-                        <button class="capsual-button text-default me-5">לא</button>
+                        <label class="capsual-button">
+                            <input type="checkbox"/>
+                            <div class="checked-bg">כן</div>
+                        </label>
+                        <label class="capsual-button me-5">
+                            <input type="checkbox"/>
+                            <div class="checked-bg">לא</div>
+                        </label>
                     </div>
                 </div>
                 <div class="col-7 px-0"></div>

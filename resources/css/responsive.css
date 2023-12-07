@@ -1,0 +1,123 @@
+@media (max-width: 1600px) {
+    .signin-form {
+        margin-top: 0 !important;
+        padding: 39px 69px 38px 27px;
+    }
+    .signin-form .bg-default {
+        padding: 20px 30px !important;
+    }
+}
+@media (max-width: 1199px) {
+    .footer-content {
+        left: 75px;
+    }
+}
+@media (max-width: 991px) {
+    .btn-default {
+        padding: 10px 45px;
+        font-size: 26px;
+    }
+    .text-size-default {
+        font-size: 35px;
+    }
+    .text-large {
+        font-size: 60px;
+    }
+    .text-small {
+        font-size: 25px;
+    }
+    .form-input {
+        padding: 16px 25px;
+    }
+    ::placeholder {
+        font-size: 26px !important;
+    }
+    select:required:invalid {
+        font-size: 26px !important;
+        line-height: 1.2;
+    }
+    .signin-form {
+        border-radius: 49px !important;
+        padding: 39px 40px;
+    }
+    .footer-content {
+        width: 97%;
+        left: 12px;
+    }
+    .footer-content img {
+        width: 200px;
+    }
+}
+@media (max-width: 767px) {
+    .row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-content .row {
+        padding-left: 10px !important;
+    }
+}
+@media (max-width: 575px) {
+    .signin-form {
+        padding: 0;
+    }
+    .footer-content {
+        position: unset;
+        margin-top: 30px;
+    }
+    .footer-content .row {
+        flex-direction: column-reverse;
+    }
+    .footer-content .col-sm-6 {
+        text-align: center !important;
+    }
+    .footer-content .col-sm-6 button {
+        float: none !important;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .btn-default {
+        padding: 5px 30px;
+        font-size: 18px;
+    }
+    .text-size-default {
+        font-size: 24px;
+    }
+    .text-large {
+        font-size: 35px;
+    }
+    .text-small {
+        font-size: 16px;
+    }
+    .form-input {
+        padding: 10px 17px;
+    }
+    ::placeholder {
+        font-size: 16px !important;
+    }
+    select:required:invalid {
+        font-size: 16px !important;
+    }
+    .signin-form .bg-default {
+        border-radius: 25px !important;
+    }
+    .signin-form .bg-default .form {
+        margin-top: 10px !important;
+    }
+    .footer-content img {
+        width: 150px;
+    }
+}
+@media (max-width: 340px) {
+    .bg-image-container {
+        height: unset;
+        min-height: 100vh;
+    }
+    .bg-image-container.first .container-fluid {
+        padding-top: 10px !important;
+    }
+    .signin-form.mt-5 {
+        margin-top: 0 !important;
+    }
+}
