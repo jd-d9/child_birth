@@ -1,7 +1,7 @@
 <template>
     <div class="bg-image-container five">
-        <div class="container-fluid pt-2">
-            <div class="row side-spacing">
+        <div class="container-fluid">
+            <div class="row side-spacing pt-4">
                 <div class="col-3 px-0"></div>
                 <div class="col-6 px-0 text-center">
                     <h2 class="text-center text-default text-size-default mb-2">תורמים פוטנציאליים</h2>
@@ -35,7 +35,175 @@
                 </div>
                 <div class="col-3 px-0"></div>
             </div>
-            <div class="row side-spacing pb-5">
+            <div class="row side-spacing pb-5 vertical-scroller">
+                <div class="col-3">
+                    <div class="donor-list">
+                        <span class="tag">עורך דין</span>
+                        <img src="../../../public/images/avatar-1.png" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <div class="donor-details d-flex justify-content-center align-items-center bg-white">
+                            <div class="h-100">
+                                <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>1.85</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/eye.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>כחול</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/hair.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>חום</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="donor-list">
+                        <span class="tag">מהנדס</span>
+                        <img src="../../../public/images/donor-2.png" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <div class="donor-details d-flex justify-content-center align-items-center bg-white">
+                            <div class="h-100">
+                                <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>1.79</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/eye.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>כחול</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/hair.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>חום</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="donor-list">
+                        <span class="tag">רואה חשבון</span>
+                        <img src="../../../public/images/donor-1.png" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <div class="donor-details d-flex justify-content-center align-items-center bg-white">
+                            <div class="h-100">
+                                <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>1.78</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/eye.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>חום</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/hair.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>חום</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="donor-list">
+                        <span class="tag">מהנדס</span>
+                        <img src="../../../public/images/avatar.png" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <div class="donor-details d-flex justify-content-center align-items-center bg-white">
+                            <div class="h-100">
+                                <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>1.83</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/eye.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>כחול</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/hair.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>שחור</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="donor-list">
+                        <span class="tag">עורך דין</span>
+                        <img src="../../../public/images/avatar-1.png" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <div class="donor-details d-flex justify-content-center align-items-center bg-white">
+                            <div class="h-100">
+                                <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>1.85</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/eye.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>כחול</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/hair.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>חום</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="donor-list">
+                        <span class="tag">מהנדס</span>
+                        <img src="../../../public/images/donor-2.png" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <div class="donor-details d-flex justify-content-center align-items-center bg-white">
+                            <div class="h-100">
+                                <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>1.79</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/eye.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>כחול</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/hair.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>חום</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="donor-list">
+                        <span class="tag">רואה חשבון</span>
+                        <img src="../../../public/images/donor-1.png" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <div class="donor-details d-flex justify-content-center align-items-center bg-white">
+                            <div class="h-100">
+                                <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>1.78</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/eye.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>חום</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/hair.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>חום</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="donor-list">
+                        <span class="tag">מהנדס</span>
+                        <img src="../../../public/images/avatar.png" alt="img" width="100%" height="auto">
+                        <img src="../../../public/images/svg/heart-circle.svg" class="heart-icon" alt="img" width="25" height="auto">
+                        <div class="donor-details d-flex justify-content-center align-items-center bg-white">
+                            <div class="h-100">
+                                <img src="../../../public/images/svg/height.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>1.83</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/eye.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>כחול</span>
+                            </div>
+                            <div class="add-border-right h-100">
+                                <img src="../../../public/images/svg/hair.svg" class="ms-2" alt="img" width="25" height="auto">
+                                <span>שחור</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-3">
                     <div class="donor-list">
                         <span class="tag">עורך דין</span>
@@ -126,7 +294,7 @@
                     <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
                 </div>
                 <div class="col-6">
-                    <div class="position-absolute">
+                    <div class="position-absolute" @click.prevent="redirectToPage">
                         <img src="../../../public/images/svg/heart-circle.svg" class="ms-3" alt="img" width="25" height="auto">
                         <span>מהנדס</span>
                     </div>
@@ -140,9 +308,13 @@
 export default {
     data() {
         return {
-            fieldOne: 'שם פרטי ושם משפחה',
-            fieldTwo: 'ת.ז',
+
         }
-    }
+    },
+    methods: {
+        redirectToPage() {
+            this.$router.push('/seven');
+        }
+    },
 }
 </script>

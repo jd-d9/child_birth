@@ -22,7 +22,7 @@
                         <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
                     </div>
                     <div class="col-6">
-                        <button class="btn-default btn-outlined text-default" style="float: left">המשך ></button>
+                        <button class="btn-default btn-outlined text-default" style="float: left" @click.prevent="redirectToPage">המשך ></button>
                     </div>
                 </div>
             </div>
@@ -35,6 +35,11 @@ export default {
     data() {
         return {
         }
-    }
+    },
+    methods: {
+        redirectToPage() {
+            this.$router.push('/second');
+        }
+    },
 }
 </script>

@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row side-spacing align-items-end">
                 <div class="col-4 px-0">
-                    <button class="btn-default btn-outlined text-default">לאיפוס ע״י האחות</button>
+                    <button class="btn-default btn-outlined text-default" @click.prevent="redirectToPage('/nine')">לאיפוס ע״י האחות</button>
                 </div>
                 <div class="col-4 px-0 text-center">
                     <h2 class="text-center text-default text-size-default mb-2">מזל טוב על בחירתך!</h2>
@@ -40,7 +40,7 @@
                     <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
                 </div>
                 <div class="col-6">
-                    <button class="btn-default btn-outlined text-default" style="float: left">לביטול הבחירה וחזרה ></button>
+                    <button class="btn-default btn-outlined text-default" style="float: left" @click.prevent="redirectToPage('/six')">לביטול הבחירה וחזרה ></button>
                 </div>
             </div>
         </div>
@@ -51,9 +51,12 @@
 export default {
     data() {
         return {
-            fieldOne: 'שם פרטי ושם משפחה',
-            fieldTwo: 'ת.ז',
         }
-    }
+    },
+    methods: {
+        redirectToPage(route) {
+            this.$router.push(route);
+        }
+    },
 }
 </script>
