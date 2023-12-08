@@ -163,10 +163,14 @@ select option[value=""][disabled] {
 
 /* footer section */
 .footer-content {
-    width: 87%;
     position: absolute;
     bottom: 60px;
-    left: 119px;
+    display: block;
+    width: 98% !important;
+}
+.footer-content .row {
+    width: 87%;
+    margin: 0 auto !important;
 }
 .footer-content img {
     width: 285px;
@@ -174,7 +178,8 @@ select option[value=""][disabled] {
 
 /* container side spacing */
 .side-spacing {
-    padding: 80px 119px 0 !important;
+    width: 87%;
+    padding: 80px 0 0 !important;
 }
 
 /* sign in page */
@@ -212,12 +217,14 @@ select option[value=""][disabled] {
 
 /* page 2 css */
 .bg-image-container.two {
-    background: transparent url('../../public/images/baby-2.png') 400% 60% no-repeat padding-box;
+    background: transparent url('../../public/images/baby-2.png') no-repeat padding-box;
+    background-position: center left;
     background-size: cover;
 }
 .bg-image-container.three {
     background: transparent url('../../public/images/baby-3.png') 0% 0% no-repeat padding-box;
-    background-size: contain;
+    background-position: center left;
+    background-size: cover;
 }
 .bg-image-container.four {
     background: transparent url('../../public/images/bg-orange.png') 10% 100% no-repeat padding-box;
@@ -261,10 +268,14 @@ select option[value=""][disabled] {
     transform: rotateX(180deg);
     transition: all 0.6s ease;
 }
-.babies-background {
+/* .babies-background {
     width: auto !important;
     height: 550px;
     margin: -120px 0 0 -40px;
+} */
+.babies-background {
+    width: 100% !important;
+    margin: -120px 0 0;
 }
 
 /* page 5 css */

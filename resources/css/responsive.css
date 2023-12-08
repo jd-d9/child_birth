@@ -1,15 +1,20 @@
 @media (max-width: 1600px) {
     .signin-form {
+        padding: 39px 66px 38px 27px;
+    }
+    .signin-form.mt-5 {
         margin-top: 0 !important;
-        padding: 39px 69px 38px 27px;
     }
     .signin-form .bg-default {
         padding: 20px 30px !important;
     }
+    .babies-background {
+        margin: -80px 0 0;
+    }
 }
 @media (max-width: 1199px) {
-    .footer-content {
-        left: 75px;
+    .babies-background {
+        margin: -10px 0 0;
     }
 }
 @media (max-width: 991px) {
@@ -40,43 +45,27 @@
         border-radius: 49px !important;
         padding: 39px 40px;
     }
-    .footer-content {
-        width: 97%;
-        left: 12px;
-    }
     .footer-content img {
         width: 200px;
     }
+    .search-icon {
+        top: 17px;
+        left: 17px;
+        width: 25px;
+        height: 25px;
+    }
+    .bg-image-container.three {
+        background: linear-gradient(90deg, #cbdfffa9 0%, #e0eaff9a 20%, #f9fbff75 100%), url('../../public/images/baby-3.png') no-repeat padding-box !important;
+        background-size: cover !important;
+    }
 }
 @media (max-width: 767px) {
-    .row {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .footer-content .row {
-        padding-left: 10px !important;
+    .bg-image-container.two {
+        background: linear-gradient(90deg, #a5c7ffa9 0%, #b1cbff9a 20%, #edf3ff75 100%), url('../../public/images/baby-2.png') no-repeat padding-box !important;
+        background-size: cover !important;
     }
 }
 @media (max-width: 575px) {
-    .signin-form {
-        padding: 0;
-    }
-    .footer-content {
-        position: unset;
-        margin-top: 30px;
-    }
-    .footer-content .row {
-        flex-direction: column-reverse;
-    }
-    .footer-content .col-sm-6 {
-        text-align: center !important;
-    }
-    .footer-content .col-sm-6 button {
-        float: none !important;
-        margin-bottom: 30px;
-    }
-}
-@media (max-width: 480px) {
     .btn-default {
         padding: 5px 30px;
         font-size: 18px;
@@ -99,6 +88,47 @@
     select:required:invalid {
         font-size: 16px !important;
     }
+    .footer-content {
+        position: unset !important;
+        margin-top: 30px !important;
+    }
+    .footer-content .row {
+        flex-direction: column-reverse !important;
+    }
+    .footer-content .col-sm-6 {
+        text-align: center !important;
+    }
+    .footer-content .col-sm-6 button {
+        float: none !important;
+        margin-bottom: 30px;
+    }
+    .side-spacing {
+        width: 100%;
+        padding: 30px 0 0 !important;
+    }
+    .footer-content {
+        width: 100% !important;
+    }
+    .footer-content .row {
+        width: 100%;
+    }
+    .search-icon {
+        top: 14px;
+        left: 14px;
+        width: 20px;
+        height: 20px;
+    }
+    .bg-image-container.two, .bg-image-container.three {
+        text-align:  center !important;
+    }
+    .bg-image-container.two .d-flex {
+        justify-content: center;
+    }
+    .signin-form {
+        padding: 0;
+    }
+}
+@media (max-width: 480px) {
     .signin-form .bg-default {
         border-radius: 25px !important;
     }
