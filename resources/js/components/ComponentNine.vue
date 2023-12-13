@@ -2,8 +2,8 @@
     <div class="bg-image-container nine">
         <div class="bg-image-blur"></div>
         <div class="container-fluid h-100">
-            <div class="row pt-0 side-spacing align-items-center h-100">
-                <div class="col-5 px-0 mx-auto text-center">
+            <div class="row side-spacing pt-0 mx-auto align-items-center h-100">
+                <div class="col-xl-5 col-lg-8 col-md-9 mx-auto text-center">
                     <div class="signin-form">
                         <div class="bg-default">
                             <h5 class="text-center text-white">לשימוש המשרד בלבד</h5>

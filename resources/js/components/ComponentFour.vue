@@ -1,7 +1,7 @@
 <template>
     <div class="bg-image-container four">
-        <div class="container-fluid">
-            <div class="row side-spacing mx-auto">
+        <div class="container-fluid pb-4">
+            <div class="row side-spacing mx-auto pt-0 pt-sm-5">
                 <div class="col-xl-4 col-md-2 d-md-block"></div>
                 <div class="col-xl-4 col-md-8 text-center">
                     <h2 class="text-center text-default text-size-default mb-4">רשימת נשאויות גנטיות</h2>
@@ -10,8 +10,9 @@
                         <img src="../../../public/images/svg/search.svg" class="search-icon" alt="img" width="100%" height="auto">
                     </div>
                     <div class="mx-auto position-relative mt-4">
-                        <input type="text" class="form-input text-default border-transparent w-100" placeholder="חיפוש לפי שם הנשאות">
-                        <img src="../../../public/images/svg/half-border.svg" class="half-border-icon" alt="img" width="100%" height="auto">
+                        <div class="half-border">
+                            <input type="text" class="form-input text-default border-transparent w-100" placeholder="חיפוש לפי שם הנשאות">
+                        </div>
                         <img src="../../../public/images/svg/left.svg" class="search-icon" alt="img" width="100%" height="auto" style="cursor: pointer" @click.prevent="redirectToPage('/ten')">
                     </div>
                 </div>
@@ -19,7 +20,7 @@
             </div>
             <div class="row side-spacing mx-auto pt-0">
                 <div class="text-center">
-                    <img src="../../../public/images/babies.png" class="babies-background pb-5" alt="img" width="100%" height="auto">
+                    <img src="../../../public/images/babies.png" class="babies-background" alt="img" width="100%" height="auto">
                 </div>
             </div>
             <div class="footer-content">
