@@ -164,9 +164,11 @@ select option[value=""][disabled] {
 /* footer section */
 .footer-content {
     position: absolute;
+    margin-top: 50px;
     bottom: 60px;
     display: block;
     width: 98% !important;
+    padding-bottom: 15px;
 }
 .footer-content .row {
     width: 87%;
@@ -233,6 +235,7 @@ select option[value=""][disabled] {
 .bg-image-container.five {
     background: transparent linear-gradient(180deg, #F6F6F5 0%, #F3F5F5 40%, #C9D9D5 100%) 0% 0% no-repeat padding-box;
     background-size: auto;
+    overflow-x: hidden;
 }
 .bg-image-container.six {
     height: auto;
@@ -258,24 +261,9 @@ select option[value=""][disabled] {
     width: 30px;
     height: 30px;
 }
-.half-border-icon {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-}
-.half-border-icon.rotate-up {
-    bottom: 49%;
-    transform: rotateX(180deg);
-    transition: all 0.6s ease;
-}
-/* .babies-background {
-    width: auto !important;
-    height: 550px;
-    margin: -120px 0 0 -40px;
-} */
+
 .babies-background {
     width: 100% !important;
-    margin: -120px 0 0;
 }
 
 /* page 5 css */
@@ -300,15 +288,14 @@ select option[value=""][disabled] {
 }
 .donor-list .donor-details {
     width: 100%;
-    height: 80px;
+    height: 75px;
 }
 .donor-list .donor-details div {
-    padding: 30px 25px 10px;
+    padding-top: 25px;
     color: #1d3e7c;
     font-weight: 700;
-}
-.donor-list .donor-details div:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    text-align: center;
 }
 .add-border-right {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -317,7 +304,7 @@ select option[value=""][disabled] {
     border-radius: 0 50px 50px 0;
     padding: 20px 30px 20px 80px;
     background-color: white;
-    left: -106px;
+    left: -1.3%;
     cursor: pointer;
 }
 .footer-content .position-absolute img {
@@ -350,8 +337,9 @@ select option[value=""][disabled] {
     border-radius: 37px;
 }
 .bg-image-footer {
-    height: 600px;
-    background: transparent url('../../public/images/image-1.png') 40% 0% no-repeat padding-box;
+    height: 430px;
+    background: transparent url('../../public/images/image-1.png') no-repeat padding-box;
+    background-position: center;
     mix-blend-mode: multiply;
     background-size: contain;
 }
@@ -381,11 +369,6 @@ select option[value=""][disabled] {
 }
 
 /* page 10 css */
-.bg-image-container.ten .half-border-icon {
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-}
 .bg-image-container.ten .bg-image-blur {
     height: 500px;
     opacity: 0.1;
@@ -447,8 +430,8 @@ select option[value=""][disabled] {
     background-color: transparent !important;
 }
 
-.visible-options {
-    height: 200px;
+.visible-options div {
+    margin-bottom: 10px;
 }
 
 .bg-image-container.five .capsual-button {
@@ -457,4 +440,36 @@ select option[value=""][disabled] {
     color: #1d3e7c;
     background-color: white;
     border-color: white;
+}
+
+
+/* half border input & button */
+.half-border {
+    position: relative;
+    width: 100%;
+}
+.half-border::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    border: 2px solid #1d3e7c;
+    border-top: none;
+    border-radius: 0 0 35px 35px;
+    left: 0;
+    top: 50%;
+}
+.half-border.rotate-up::after {
+    border-top: 2px solid #1d3e7c;
+    border-bottom: none;
+    border-radius: 35px 35px 0 0;
+    top: 0;
+    transition: all 0.2s ease-out;
+}
+.half-border + .search-icon {
+    cursor: pointer;
+}
+
+.width-50 {
+    width: 50%;
 }

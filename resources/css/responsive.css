@@ -8,13 +8,37 @@
     .signin-form .bg-default {
         padding: 20px 30px !important;
     }
-    .babies-background {
-        margin: -80px 0 0;
+    .donor-list {
+        margin: 0 0 20px;
+        border-radius: 33px;
+    }
+    .donor-list .tag, .donor-information .tag {
+        padding: 7px 36px;
+        font-size: 16px;
+    }
+    .choosen-doner.py-3.px-5 {
+        padding: 0 !important;
+    }
+    .bg-image-container.eight .side-spacing .btn-default {
+        padding: 10px !important;
+        margin-top: 20px;
+    }
+    .bg-image-container.nine .signin-form {
+        padding: 20px 25px;
+    }
+    .bg-image-container.nine .signin-form .bg-default {
+        padding: 20px 30px 35px !important;
     }
 }
 @media (max-width: 1199px) {
-    .babies-background {
-        margin: -10px 0 0;
+    .width-50 {
+        width: 100%;
+    }
+    .bg-image-footer {
+        height: 330px;
+    }
+    .bg-image-container.eight .side-spacing {
+        flex-direction: column-reverse;
     }
 }
 @media (max-width: 991px) {
@@ -54,15 +78,40 @@
         width: 25px;
         height: 25px;
     }
-    .bg-image-container.three {
-        background: linear-gradient(90deg, #cbdfffa9 0%, #e0eaff9a 20%, #f9fbff75 100%), url('../../public/images/baby-3.png') no-repeat padding-box !important;
-        background-size: cover !important;
-    }
-}
-@media (max-width: 767px) {
     .bg-image-container.two {
-        background: linear-gradient(90deg, #a5c7ffa9 0%, #b1cbff9a 20%, #edf3ff75 100%), url('../../public/images/baby-2.png') no-repeat padding-box !important;
+        background: linear-gradient(90deg, #8ab7ffa9 0%, #bed3ff9a 20%, #ffffff75 100%), url('../../public/images/baby-2.png') no-repeat padding-box !important;
         background-size: cover !important;
+        background-attachment: fixed !important;
+        min-height: 100vh;
+        height: auto;
+    }
+    .bg-image-container.three {
+        background: linear-gradient(90deg, #8ab7ffa9 0%, #bed3ff9a 20%, #ffffff75 100%), url('../../public/images/baby-3.png') no-repeat padding-box !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+        min-height: 100vh;
+        height: auto;
+    }
+    .bg-image-container.four, .bg-image-container.five, .bg-image-container.eight, .bg-image-container.ten {
+        height: unset;
+        min-height: 100vh;
+    }
+    .bg-image-container.six .row.side-spacing {
+        flex-direction: column-reverse !important;
+    }
+    .bg-image-container.six .footer-content .row {
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
+    .bg-image-container.six .col-md-4, .bg-image-container.six .col-md-8 {
+        text-align: center !important;
+    }
+    .bg-image-container.six .col-md-8 button {
+        float: none !important;
+        margin-bottom: 30px;
+    }
+    .bg-image-container.six .footer-content {
+        position: relative;
     }
 }
 @media (max-width: 575px) {
@@ -88,7 +137,7 @@
     select:required:invalid {
         font-size: 16px !important;
     }
-    .footer-content {
+    .footer-content, .bg-image-container.six .footer-content {
         position: unset !important;
         margin-top: 30px !important;
     }
@@ -127,6 +176,44 @@
     .signin-form {
         padding: 0;
     }
+    .donor-list {
+        border-radius: 53px;
+    }
+    .vertical-scroller {
+        height: unset;
+    }
+    .footer-content .position-absolute {
+        position: relative !important;
+        padding: 10px 0px !important;
+        width: 50%;
+        margin: 0 auto 30px;
+        border-radius: 53px;
+    }
+    .footer-content .position-absolute span {
+        font-size: 20px !important;
+    }
+    .footer-content .position-absolute img {
+        width: 23px;
+        height: 23px;
+        margin-top: -4px;
+    }
+    .bg-image-footer {
+        height: 200px;
+        background-size: cover;
+    }
+    .donor-information .heart-icon {
+        top: unset;
+        bottom: 20px;
+        right: 20px;
+    }
+    .bg-image-container.first .container-fluid, .bg-image-container.four .container-fluid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
 }
 @media (max-width: 480px) {
     .signin-form .bg-default {
@@ -149,5 +236,8 @@
     }
     .signin-form.mt-5 {
         margin-top: 0 !important;
+    }
+    .donor-information {
+        width: unset;
     }
 }

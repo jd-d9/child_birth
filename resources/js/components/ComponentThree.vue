@@ -18,7 +18,7 @@
                     <div class="col-sm-6 text-right">
                         <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 text-lg-end text-start">
                         <button class="btn-default btn-bg-white text-default" @click.prevent="redirectToPage('/four')">המשך ></button>
                     </div>
                 </div>

@@ -1,33 +1,30 @@
 <template>
     <div class="bg-image-container five">
         <div class="container-fluid">
-            <div class="row side-spacing pt-4">
-                <div class="col-3 px-0"></div>
-                <div class="col-6 px-0 text-center">
+            <div class="row side-spacing mx-auto pt-4">
+                <div class="col-xl-2 d-none d-xl-block"></div>
+                <div class="col-xl-8 text-center">
                     <h2 class="text-center text-default text-size-default mb-2">תורמים פוטנציאליים</h2>
-                    <div class="w-50 mx-auto">
+                    <div class="width-50 mx-auto">
                         <h5 class="text-default">נא לחצי על התורם הרצוי כדי להציג פרטים נוספים ולבחור בו כתורם הרצוי</h5>
                     </div>
-                    <div class="row visible-options">
-                        <div class="col-4">
-                            <div class="position-relative">
-                                <button class="btn-default p-2 text-default border-transparent pb-3">צבע</button>
-                                <img src="../../../public/images/svg/half-border2.svg" :class="{'half-border-icon': true, 'rotate-up': firstOption}" alt="img" width="100%" height="auto">
-                                <img src="../../../public/images/svg/chevron-down.svg" class="search-icon" alt="img" width="100%" height="auto" @click.prevent="openFirstOption">
+                    <div class="row visible-options pb-4">
+                        <div class="col-md-4 col-sm-6 mx-auto">
+                            <div class="position-relative" @click.prevent="openFirstOption">
+                                <button :class="{'btn-default p-2 text-default border-transparent pb-3 half-border': true, 'rotate-up': firstOption}">צבע</button>
+                                <img src="../../../public/images/svg/chevron-down.svg" class="search-icon" alt="img" width="100%" height="auto">
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="position-relative">
-                                <button class="btn-default p-2 text-default border-transparent pb-3">עיניים</button>
-                                <img src="../../../public/images/svg/half-border2.svg" :class="{'half-border-icon': true, 'rotate-up': secondOption}" alt="img" width="100%" height="auto">
-                                <img src="../../../public/images/svg/chevron-down.svg" class="search-icon" alt="img" width="100%" height="auto" @click.prevent="openSecondOption">
+                        <div class="col-md-4 col-sm-6 mx-auto">
+                            <div class="position-relative" @click.prevent="openSecondOption">
+                                <button :class="{'btn-default p-2 text-default border-transparent pb-3 half-border': true, 'rotate-up': secondOption}">עיניים</button>
+                                <img src="../../../public/images/svg/chevron-down.svg" class="search-icon" alt="img" width="100%" height="auto">
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="position-relative">
-                                <button class="btn-default p-2 text-default border-transparent pb-3">צבע עיניים</button>
-                                <img src="../../../public/images/svg/half-border2.svg" :class="{'half-border-icon': true, 'rotate-up': thirdOption}" alt="img" width="100%" height="auto">
-                                <img src="../../../public/images/svg/chevron-down.svg" class="search-icon" alt="img" width="100%" height="auto" @click.prevent="openThirdOption">
+                        <div class="col-md-4 col-sm-6 mx-auto">
+                            <div class="position-relative" @click.prevent="openThirdOption">
+                                <button :class="{'btn-default p-2 text-default border-transparent pb-3 half-border': true, 'rotate-up': thirdOption}">צבע עיניים</button>
+                                <img src="../../../public/images/svg/chevron-down.svg" class="search-icon" alt="img" width="100%" height="auto">
                             </div>
                         </div>
                         <div class="col-12" v-if="firstOption">
@@ -36,7 +33,7 @@
                                 <label for="customRange3" class="form-label text-default fw-bold">2.06</label>
                                 <label for="customRange3" class="form-label text-default fw-bold">1.60</label>
                             </div>
-                            <div class="d-flex justify-content-around align-items-center">
+                            <div class="d-flex justify-content-around align-items-center flex-wrap gap-2">
                                 <label class="capsual-button">
                                     <input type="checkbox"/>
                                     <div class="checked-bg">חום - ירוק</div>
@@ -48,7 +45,7 @@
                             </div>
                         </div>
                         <div class="col-12" v-if="secondOption">
-                            <div class="d-flex justify-content-around align-items-center">
+                            <div class="d-flex justify-content-around align-items-center flex-wrap gap-2">
                                 <label class="capsual-button">
                                     <input type="checkbox"/>
                                     <div class="checked-bg">חום - ירוק</div>
@@ -72,7 +69,7 @@
                             </div>
                         </div>
                         <div class="col-12" v-if="thirdOption">
-                            <div class="d-flex justify-content-around align-items-center">
+                            <div class="d-flex justify-content-around align-items-center flex-wrap gap-2">
                                 <label class="capsual-button">
                                     <input type="checkbox"/>
                                     <div class="checked-bg">חום - ירוק</div>
@@ -93,10 +90,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 px-0"></div>
+                <div class="col-xl-2 d-none d-xl-block"></div>
             </div>
-            <div class="row side-spacing pt-0 pb-5 vertical-scroller">
-                <div class="col-3">
+            <div class="row side-spacing mx-auto pt-0 pb-sm-5 vertical-scroller">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list" @click.prevent="redirectToPage('/six')">
                         <span class="tag">עורך דין</span>
                         <img src="../../../public/images/avatar-1.png" alt="img" width="100%" height="auto">
@@ -125,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">מהנדס</span>
                         <img src="../../../public/images/donor-2.png" alt="img" width="100%" height="auto">
@@ -154,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">רואה חשבון</span>
                         <img src="../../../public/images/donor-1.png" alt="img" width="100%" height="auto">
@@ -183,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">מהנדס</span>
                         <img src="../../../public/images/donor-4.png" alt="img" width="100%" height="auto">
@@ -212,7 +209,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">עורך דין</span>
                         <img src="../../../public/images/donor-3.png" alt="img" width="100%" height="auto">
@@ -241,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">מהנדס</span>
                         <img src="../../../public/images/donor-2.png" alt="img" width="100%" height="auto">
@@ -270,7 +267,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">רואה חשבון</span>
                         <img src="../../../public/images/donor-1.png" alt="img" width="100%" height="auto">
@@ -299,7 +296,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">מהנדס</span>
                         <img src="../../../public/images/avatar.png" alt="img" width="100%" height="auto">
@@ -328,7 +325,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">עורך דין</span>
                         <img src="../../../public/images/avatar-1.png" alt="img" width="100%" height="auto">
@@ -357,7 +354,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
                         <span class="tag">מהנדס</span>
                         <img src="../../../public/images/donor-2.png" alt="img" width="100%" height="auto">
@@ -386,9 +383,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
-                        <!-- <span class="tag">מהנדס</span> -->
                         <img src="../../../public/images/donor-3.png" alt="img" width="100%" height="auto">
                         <label class="heart-icon">
                             <input type="checkbox"/>
@@ -415,9 +411,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="donor-list">
-                        <!-- <span class="tag">מהנדס</span> -->
                         <img src="../../../public/images/donor-4.png" alt="img" width="100%" height="auto">
                         <label class="heart-icon">
                             <input type="checkbox"/>
@@ -445,14 +440,16 @@
                     </div>
                 </div>
             </div>
-            <div class="row footer-content">
-                <div class="col-6 text-right">
-                    <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
-                </div>
-                <div class="col-6">
-                    <div class="position-absolute" @click.prevent="redirectToPage('/seven')">
-                        <img src="../../../public/images/svg/heart-circle.svg" class="ms-3" alt="img" width="25" height="auto">
-                        <span>מהנדס</span>
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-sm-6 text-right">
+                        <img src="../../../public/images/ihilov.png" alt="img" width="100%" height="auto">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="position-absolute" @click.prevent="redirectToPage('/seven')">
+                            <img src="../../../public/images/svg/heart-circle.svg" class="ms-3" alt="img" width="25" height="auto">
+                            <span>מהנדס</span>
+                        </div>
                     </div>
                 </div>
             </div>
